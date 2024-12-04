@@ -20,12 +20,12 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'temurin'
+          distribution: 'temurin'  
 
       - name: Set up Gradle
         uses: gradle/wrapper-validation-action@v1
 
-      - name: Run Gradle build
+      - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
       - name: Run tests
